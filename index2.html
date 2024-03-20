@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev | Designer</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container flex-lg-column">
+            <a class="navbar-brand mx-lg-auto mb-lg-4 align-items-center justify-content-center d-flex"
+                href="/index2.html">
+                <span class="h3 fw-bold d-block d-lg-none" style="margin-top:.25rem;margin-bottom:.25rem">Pranav</span>
+                <!-- <img src="./assets/images/person.jpg" class="d-none d-lg-block rounded-circle"
+                    style="width:80%;height:80%" alt="hero"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- //NAVBAR -->
+
+    <!-- CONTENT WRAPPER -->
+    <div id="content-wrapper">
+
+        <!-- HOME -->
+        <section id="home" class="full-height px-lg-5">
+
+            <div class="container">
+                <video autoplay loop muted plays-inline class="background-clip">
+                    <source src="video (2160p).mp4" type="video/mp4">
+                </video>
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up"><span class="text-brand">KILLER
+                                DEALS</span> <br>On killer Technology</h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">BestSellers Starting at.</p>
+                        <div data-aos="fade-up" data-aos-delay="600"
+                            class="d-flex flex-column flex-sm-row gap-4 align-items-sm-center">
+                            <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
+                            <a href="#" class="link-custom">Email: pranavgupta940@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- //HOME -->
+
+               <!-- SERVICES -->
+               <section id="services" class="full-height px-lg-5">
+                <div class="container">
+    
+                    <div class="row pb-4" data-aos="fade-up">
+                        <div class="col-lg-8">
+                            <h6 class="text-brand">CATEGORIES</h6>
+                            <h1>Categories That I Provide</h1>
+                        </div>
+                    </div>
+    
+                    <div class="row gy-4">
+                        <h2 style="text-align: center; position: absolute; right: 350px; margin-top: 200px; cursor:pointer;">SmartWactes</h2>
+                        <video width="600" height="409" style="position: relative;" id="videoPlayer2" >
+                            <!-- MP4 Video -->
+                            <source src="watchvd.mp4" type="video/mp4">
+                           </video>
+                           
+                           
+                           <script>
+                               var videoPlayer2 = document.getElementById('videoPlayer2');
+                           
+                               // Auto play, half volume.
+                               videoPlayer2.play()
+                               videoPlayer2.volume = 0.5;
+                           
+                               // Play / pause.
+                               videoPlayer2.addEventListener('click', function () {
+                                   if (videoPlayer2.paused == false) {
+                                       videoPlayer2.pause();
+                                       videoPlayer2.firstChild.nodeValue = 'Play';
+                                   } else {
+                                       videoPlayer2.play();
+                                       videoPlayer2.firstChild.nodeValue = 'Pause';
+                                   }
+                               });
+                           </script>
+
+                        <h2 style="text-align: center; position: absolute; right: 350px; margin-top: 600px;">Wireless Earbuds</h2>
+                        <video width="600" height="409" id="videoPlayer1" >
+                            <!-- MP4 Video -->
+                            <source src="earbudsvd.mp4" type="video/mp4">
+                           </video>
+                           
+                           
+                           <script>
+                               var videoPlayer1 = document.getElementById('videoPlayer1');
+                           
+                               // Auto play, half volume.
+                               videoPlayer1.play()
+                               videoPlayer1.volume = 0.5;
+                           
+                               // Play / pause.
+                               videoPlayer1.addEventListener('click', function () {
+                                   if (videoPlayer1.paused == false) {
+                                       videoPlayer1.pause();
+                                       videoPlayer1.firstChild.nodeValue = 'Play';
+                                   } else {
+                                       videoPlayer1.play();
+                                       videoPlayer1.firstChild.nodeValue = 'Pause';
+                                   }
+                               });
+                           </script>
+    
+                        <h2 style="text-align: center; position: absolute; right: 350px; margin-top: 1100px;">Headphones</h2>
+                        <video width="600" height="409" id="videoPlayer" >
+                            <!-- MP4 Video -->
+                            <source src="headphonevd.mp4" type="video/mp4">
+                           </video>
+                           
+                           
+                           <script>
+                               var videoPlayer = document.getElementById('videoPlayer');
+                           
+                               // Auto play, half volume.
+                               videoPlayer.play()
+                               videoPlayer.volume = 0.5;
+                           
+                               // Play / pause.
+                               videoPlayer.addEventListener('click', function () {
+                                   if (videoPlayer.paused == false) {
+                                       videoPlayer.pause();
+                                       videoPlayer.firstChild.nodeValue = 'Play';
+                                   } else {
+                                       videoPlayer.play();
+                                       videoPlayer.firstChild.nodeValue = 'Pause';
+                                   }
+                               });
+                           </script>
+    
+                        <h2 style="text-align: center; position: absolute; right: 350px; margin-top: 1500px;">Neckbands</h2>
+                        <video width="600" height="409" id="videoPlayer3" >
+                            <!-- MP4 Video -->
+                            <source src="neckbandvd.mp4" type="video/mp4">
+                           </video>
+                           
+                           
+                           <script>
+                               var videoPlayer3 = document.getElementById('videoPlayer3');
+                           
+                               // Auto play, half volume.
+                               videoPlayer3.play()
+                               videoPlayer3.volume = 0.5;
+                           
+                               // Play / pause.
+                               videoPlayer3.addEventListener('click', function () {
+                                   if (videoPlayer3.paused == false) {
+                                       videoPlayer3.pause();
+                                       videoPlayer3.firstChild.nodeValue = 'Play';
+                                   } else {
+                                       videoPlayer3.play();
+                                       videoPlayer3.firstChild.nodeValue = 'Pause';
+                                   }
+                               });
+                           </script>
+    
+                        <h2 style="text-align: center; position: absolute; right: 350px; margin-top: 1900px;">Wireless Speakers</h2>
+                        <video width="600" height="409" id="videoPlayer4" >
+                            <!-- MP4 Video -->
+                            <source src="speakervd.mp4" type="video/mp4">
+                           </video>
+                           
+                           
+                           <script>
+                               var videoPlayer4 = document.getElementById('videoPlayer4');
+                           
+                               // Auto play, half volume.
+                               videoPlayer4.play()
+                               videoPlayer4.volume = 0.5;
+                           
+                               // Play / pause.
+                               videoPlayer4.addEventListener('click', function () {
+                                   if (videoPlayer4.paused == false) {
+                                       videoPlayer4.pause();
+                                       videoPlayer4.firstChild.nodeValue = 'Play';
+                                   } else {
+                                       videoPlayer4.play();
+                                       videoPlayer4.firstChild.nodeValue = 'Pause';
+                                   }
+                               });
+                           </script>
+    
+    
+                    </div>
+    
+                </div>
+            </section>
+            <!-- SERVICES -->
+
+        <!-- WORK -->
+        <section id="work" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">DEALS</h6>
+                        <h1>Daily Deals</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-up">
+                        <div class="card-custom bg-base shadow-effect">
+                            <div class="card-custom-image">
+                                <img class="h-50" src="phone1.0.jpg" alt="">
+                                <img class="h-500" src="phone2.0.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Apple iPhone 14 Pro </h4>
+                                <p><b>Brand:</b> Apple<br>
+                                    <b>Model Name:</b> iPhone<br>
+                                    <b>Network Service Provider:</b> Unlocked for All Carriers<br>
+                                    <b>Operating System:</b> iOS<br>
+                                    <b>Cellular Technology:</b> 5G</p>
+                                <a href="https://google-clone-io.vercel.app" class="link-custom">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom  bg-base shadow-effect">
+                            <div class="card-custom-image ">
+                                <img class="h-50" src="i-pad1.0.jpg" alt="">
+                                <img class="h-500" src="ipad2.0.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Apple iPad</h4>
+                                <p><b>Brand:</b> Apple<br>
+                                    <b>Model Name: </b> 10.2-inch iPad Wi‑Fi 64GB - Silver<br>
+                                    <b>Memory Storage Capacity:</b> 64 GB<br>
+                                    <b>Screen Size: </b> 10.2<br>
+                                    <b>Operating System:</b> iOS 14</p>
+                                <a href="https://imdbclone-nextjs.vercel.app/" class="link-custom">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-up">
+                        <div class="card-custom  bg-base shadow-effect">
+                            <div class="card-custom-image ">
+                                <img class="h-50" src="laptop1.0.jpg" alt="">
+                                <img class="h-50" src="laptop2.0.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Laptop</h4>
+                                <p><b>Brand:</b> Acer<br>
+                                    <b>Model Name:</b> A315-59<br>
+                                    <b>Screen Size:</b> 15.6 Inches<br>
+                                    <b>Colour:</b> Silver<br>
+                                    <b>CPU Model: </b> Core i5<br>
+                                    <!-- <b>RAM Memory Installed Size:</b> 8 GB<br> -->
+                                    <b>Operating System:</b> Windows 11 Home<br>
+                                    <!-- <b>Graphics Card Description:</b> Integrated<br> -->
+                                    </p>
+                                <a href="https://tesla2.vercel.app/" class="link-custom">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom  bg-base shadow-effect">
+                            <div class="card-custom-image ">
+                                <img class="h-50" src="watch1.0.jpg" alt="">
+                                <img class="h-500" src="watch2.0.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Watch</h4>
+                                <p><b>Brand:</b> Cultsport<br>
+                                    <b>Model Name: </b> cult.sport Ranger XR<br>
+                                    <b>Style:</b> Modern<br>
+                                    <b>Colour:</b> Black<br>
+                                    <b>Screen Size:</b> 1.43 Inches</p>
+                                <a href="https://realtor-clone-weld.vercel.app/" class="link-custom">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom  bg-base shadow-effect">
+                            <div class="card-custom-image ">
+                                <img class="h-50" src="earbuds1.0.jpg" alt="">
+                                <img class="h-500" src="earbuds2.0.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Earbuds</h4>
+                                <p><b>Brand:</b> ANKER<br>
+                                    <b>Model Name:</b> Soundcore R50i<br>
+                                    <b>Colour: </b> Black<br>
+                                    <b>Form Factor:</b> In Ear<br>
+                                    <b>Connectivity Technology:</b> Wireless</p>
+                                <a href="https://arc-development-io.vercel.app/" class="link-custom">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom  bg-base shadow-effect">
+                            <div class="card-custom-image ">
+                                <img class="h-50" src="keboard1.0.jpg" alt="">
+                                <img class="h-500" src="keyboard2.0.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Wireless Keyboard</h4>
+                                <p><b>Brand:</b> Logitech<br>
+                                    <b>Compatible Devices:</b> Laptop, PC, Tablet, Smartphone<br>
+                                    <b>Connectivity Technology: </b> Bluetooth, USB<br>
+                                    <b>Keyboard Description:</b> Wireless<br>
+                                    <b>Special Feature:</b> Basic</p>
+                                <a href="https://final-tenet.vercel.app/" class="link-custom">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom  bg-base shadow-effect">
+                            <div class="card-custom-image ">
+                                <img class="h-50" src="cooling pad1.0.jpg" alt="">
+                                <img class="h-500" src="cooling pad2.0.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Cooling Pad</h4>
+                                <p>Light weight Cooling Pad<br>
+                                    Dual 125 * 15 mm Fan with LED Lights<br>
+                                    Silent Operation<br>
+                                    Fan speed controller<br>
+                                    Supports Laptops upto 39.62cm</p>
+                                <a href="https://octahacks5-tech-two.vercel.app/" class="link-custom">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom  bg-base shadow-effect">
+                            <div class="card-custom-image ">
+                                <img class="h-50" src="bag1.0.jpg" alt="">
+                                <img class="h-500" src="bag2.0.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Tizum Gadget Organizer</h4>
+                                <p><b>Brand:</b> TIZUM<br>
+                                    <b>Colour:</b> Midnight Black<br>
+                                    <b>Compatible Devices:</b> GPS, Memory Cards<br>
+                                    <b>Form Factor:</b> Pouch<br>
+                                    <b>Shell Type:</b> Hard</p>
+                                <a href="https://instaclone-io.vercel.app/" class="link-custom">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom  bg-base shadow-effect">
+                            <div class="card-custom-image ">
+                                <img class="h-50" src="mouse1.0.jpg" alt="">
+                                <img class="h-500" src="mouse2.0.jpg" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Wireless Optical Mouse </h4>
+                                <p><b>Brand:</b> Portronics<br>
+                                    <b>Colour:</b> Black<br>
+                                    <b>Connectivity Technology:</b> USB<br>
+                                    <b>Special Feature:</b> Wireless, Adjustable DPI.<br>
+                                    <b>Movement Detection Technology:</b> Optical</p>
+                                <a href="https://instaclone-io.vercel.app/" class="link-custom">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- //WORK -->
+
+        <!-- ABOUT -->
+        <section id="about" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">SHOP</h6>
+                        <h1>Shop by Lifestyle</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-5 d-flex align-content-start">
+                    <div class="col-lg-6">
+
+                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">For Entertainment</h3>
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 shadow-effect">
+                                    <img class="h-50" src="TWS.png" alt="">
+                                    <h4>Earbuds</h4>
+                                    <p class="text-brand mb-2"><b>Elevate Your Audio: Introducing Eardopes - Your Sound Companion</b></p>
+                                    <p class="mb-0"><b>Immerse yourself in music like never before with our sleek and powerful earbuds, designed to fit seamlessly into your lifestyle.</b></p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 shadow-effect">
+                                    <img class="h-50" src="speakers.png" alt="">
+                                    <h4>Speakers</h4>
+                                    <p class="text-brand mb-2"><b>Sonic Excellence: Explore Our Speaker Collection</b></p>
+                                    <p class="mb-0">Experience a symphony of sound with our speakers—engineered for immersive audio, delivering crystal-clear highs and heart-pounding bass to elevate every listening moment.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4  shadow-effect">
+                                    <img class="h-50" src="fitness.png" alt="">
+                                    <h4>Headphones</h4>
+                                    <p class="text-brand mb-2"><b>Your Sonic Journey Begins Here: Explore Our Signature Headphones</b></p>
+                                    <p class="mb-0">Indulge in audio perfection with our headphones—crafted to deliver immersive sound, supreme comfort, and style that harmonizes with your lifestyle, ensuring every beat resonates.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">For Parties</h3>
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 shadow-effect">
+                                    <img class="h-50" src="watches.png" alt="">
+                                    <h4>Watches</h4>
+                                    <p class="text-brand mb-2"><b>Timeless Elegance: Explore Our Watch Collection</b></p>
+                                    <p class="mb-0">Elevate your wrist game with our collection—crafted with precision engineering, these watches are not just timekeepers but statements of refined taste.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 shadow-effect">
+                                    <img class="h-50" src="neckbands.png" alt="">
+                                    <h4>Neckbands</h4>
+                                    <p class="text-brand mb-2"><b>Seamless Sound Companion: Explore Our Neckband Collection</b></p>
+                                    <p class="mb-0">Experience untethered audio excellence with our neckband headphones—designed for on-the-go comfort and delivering immersive sound that adapts seamlessly to your active lifestyle.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 shadow-effect">
+                                    <img class="h-50" src="TWS.png" alt="">
+                                    <h4>Earbuds</h4>
+                                    <p class="text-brand mb-2"><b>Elevate Your Audio: Introducing Eardopes - Your Sound Companion</b></p>
+                                    <p class="mb-0">Immerse yourself in music like never before with our sleek and powerful earbuds, designed to fit seamlessly into your lifestyle.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- //ABOUT -->
+
+        <!-- CONTACT -->
+        <section id="contact" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8 pb-4 d-flex align-content-center justify-content-center flex-column"
+                        data-aos="fade-up">
+                        <h6 class="text-brand">CONTACT</h6>
+                        <h1>Interested in working together? Let's talk
+                        </h1>
+                    </div>
+
+                    <div class="col-lg-8 d-flex align-content-center justify-content-center flex-column"
+                        data-aos="fade-up" data-aos-delay="300">
+                        <form action="#" class="row g-lg-3 gy-3">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group col-12">
+                                <input type="text" class="form-control" placeholder="Enter subject">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="" rows="4" class="form-control"
+                                    placeholder="Enter your message"></textarea>
+                            </div>
+                            <div class="form-group col-12 d-grid">
+                                <button type="submit" class="btn btn-brand">Contact me</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- //CONTACT -->
+
+        <!-- FOOTER -->
+        <footer class="py-5 px-lg-5">
+            <div class="container">
+                <div class="row gy-4 justify-content-between d-flex align-content-center">
+                    <div class="d-flex align-content-center col-auto">
+                        <p class="mb-0">All Right Reserved | <a href="#" class="fw-bold">Pranav</a></p>
+                    </div>
+                    <div class="d-flex align-content-center col-auto">
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/pranavgupta509/"><i class="lab la-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/pranav-gupta-62971325a/"><i
+                                    class="lab la-linkedin-in"></i></a>
+                            <a href="https://github.com/Prgupta25"><i class="lab la-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //FOOTER -->
+
+    </div>
+    <!-- //CONTENT WRAPPER -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script src="jquery3.6.js"></script>
+</body>
+
+</html>
